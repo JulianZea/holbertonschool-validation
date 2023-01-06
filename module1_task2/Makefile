@@ -11,5 +11,5 @@ post: ## Create a new blog post whose filename and title come from the environme
 	@hugo new posts/$(POST_NAME).md
 	@sed -i '0,/title/s/.*title.*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 .PHONY: help
-help: ## Show this help usage/Prints out the list of targets and their usage
+help: ## Show this help usage
 	@@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
