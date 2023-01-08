@@ -4,7 +4,7 @@ on:
     push:
         branches: [master]
     schedule:
-        -con: "30 00 * * *"
+        -cron: "30 00 * * *"
 
 jobs:
     build:
