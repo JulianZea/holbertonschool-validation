@@ -24,9 +24,9 @@ jobs:
       - name: "make build"
         run: cd module3_task2 && make build
 
-      # Go to the right folder and execute 'make build'
-      - name: "Build the application"
-        run: make build -C module3_task2/
+      # Check syntax on markdown files
+      - name: Run markdownlint on markdown files
+        run: make lint -C module3_task2/
 
       # Produce a zip file containing the dist folder
       - name: "Archive the dist folder inside a zip file"
