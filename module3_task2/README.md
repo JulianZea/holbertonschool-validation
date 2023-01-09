@@ -1,11 +1,9 @@
 # Go-Hugo Website
-This project aims at practicing with Continuous Integration (CI) / 
-Delivery (CD) / 
-Deployment to understand the differences, the goals and the value.
+This project aims at practicing with Continuous Integration (CI) / Delivery (CD) 
+/ Deployment to understand the differences, the goals and the value.
 
 ## Tooling
-This project needs the following tools /
-services:
+This project needs the following tools / services:
 - The command lines
   - yq
   - shellcheck
@@ -15,14 +13,14 @@ services:
 (ls, cd, etc.) with:
 ## Prerequisites
 -   **Same requirements as the previous task:**
-    
+
     -   A Valid Go-Hugo website is provided
     -   There are no Git Submodules
     -   The theme  `ananke`  is installed
     -   No directory  `dist/`  committed
     -   Makefile present
 -   **Add comments in the  `Makefile`  to describe what each target is expected to do.**
-    
+
     -   These comments should be written on the same line as the targets
     -   Each comment should start with two characters  `#`
 
