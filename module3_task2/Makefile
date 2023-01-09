@@ -26,7 +26,7 @@ integration-tests: ## ERROR: No comment found for target integration-tests in ./
 validate: ## ERROR: No comment found for target validate in ./Makefile
 
 .PHONY: lint
-lint:
+lint: ## Check markdown files for any syntax mistable
 	@markdownlint README.md DEPLOY.md
 
 .PHONY: help

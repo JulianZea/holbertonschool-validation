@@ -38,6 +38,7 @@ This project needs the following tools / services:
 - **clean** : Create a new blog post whose filename and title come
   from the environment variables `POST_TITLE` and `POST_NAME`.
 - **package** :Create a file named awesome-website.zip.
+- **lint** : Check markdown files for any syntax mistable.
 - **unit-tests** :
 - **integration-tests** :
 - **validate** :
