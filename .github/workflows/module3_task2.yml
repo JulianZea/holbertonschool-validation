@@ -18,7 +18,7 @@ jobs:
 
       # Ensure all the required tools are installed prior to any make target
       - name: "setup"
-        run: cd module3_task2 && ./setup.shi
+        run: cd module3_task2 && ./setup.sh
 
       # Check syntax on markdown files
       - name: "make build"
