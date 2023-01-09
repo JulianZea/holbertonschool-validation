@@ -1,21 +1,22 @@
-# Operations team's FAQ
+# DEPLOYMENT
+
+Quick start the hugo website and configure it.
 
 ## What is in the archive and how to unarchive it?
 
-* In the `awesome-website.zip` archive you will encounter the `dist/` folder
-* To unarchive it in your current directory use the command line:
-`unzip awesome-website.zip`
+information such as file names, timestamps, and directory structures, 
+unarchive an archive, you will need to use a program that is capable of opening and extracting the files from the archive.
 
 ## What are the commands to start and stop the application?
 
-* To generate (start) the go-hugo website run the command: `make build`
-* To clean (stop) the go-hugo website run the command: `make clean`
+./nombre_de_aplicación
+ctrl + c
 
 ## How to customize where the application logs are written?
-
-* You can customize the location of the logs by:
+ - librería de registro
+ - configuración de sistema
 
 ## How to “quickly” verify that the application is running (healthcheck)?
-
-* To veryfy is the go-hugo wesite is runnig correctly run the command: `hugo server`
-* Then verify the status of the website in your localhost by clicking the
+ - realizar una solicitud HTTP
+ - Verificar el estado de un proceso
+ - utilidad de monitoreo
