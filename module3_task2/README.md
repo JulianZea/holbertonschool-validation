@@ -1,9 +1,11 @@
 # Go-Hugo Website
-This project aims at practicing with Continuous Integration (CI) / Delivery (CD) 
-/ Deployment to understand the differences, the goals and the value.
+This project aims at practicing with Continuous Integration (CI) / 
+Delivery (CD) / 
+Deployment to understand the differences, the goals and the value.
 
 ## Tooling
-This project needs the following tools / services:
+This project needs the following tools /
+services:
 - The command lines
   - yq
   - shellcheck
