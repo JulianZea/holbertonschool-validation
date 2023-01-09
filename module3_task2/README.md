@@ -32,11 +32,11 @@ This project needs the following tools / services:
 
 ## Lifecycle
 
-- **post** : Generate the website from the markdown
+- **post** : Create a new blog post whose filename and title come 
+  from the environment variables POST_TITLE and POST_NAME.
   and configuration files in the directory `dist/`.
-- **build** : Cleanup the content of the directory `dist/`
-- **clean** : Create a new blog post whose filename and title come
-  from the environment variables `POST_TITLE` and `POST_NAME`.
+- **build** : Generate the website from the markdown and configuration files in the directory dist/.
+- **clean** : Cleanup the content of the directory dist
 - **package** :Create a file named awesome-website.zip.
 - **lint** : Check markdown files for any syntax mistable.
 - **unit-tests** :
