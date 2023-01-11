@@ -57,4 +57,4 @@ services:
   - It must be valid in YAML syntax
   - It must be a valid GitHub action workflow with 1 job with at least 7
     steps (checkout, running setup.sh and then the 5 make commands)
-  - It must be have 2 triggers...
+  - It must be have 2 triggers.
