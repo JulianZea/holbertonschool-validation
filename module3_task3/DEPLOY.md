@@ -29,3 +29,7 @@ ctrl + c
 - Create a `GitHub Release` using the
 [“softprops/gh-release” GitHub Action](https://github.com/softprops/action-gh-release)
 named `1.0.0` and pointing to the tag `1.0.0`
+
+## tag
+
+## zip
