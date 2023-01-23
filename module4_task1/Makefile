@@ -27,6 +27,7 @@ lint: ## Check markdown files for any syntax mistake
 
 unit-tests: ## Run unit-tets of the project
 	@touch coverage-units.out
+
 integration-tests: ## Run integration-tests of the project
 	@touch coverage-integrations.out
 
