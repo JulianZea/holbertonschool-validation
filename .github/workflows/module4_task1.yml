@@ -1,0 +1,41 @@
+---
+name: module4_task1
+
+on:
+  push:
+    branches: [main]
+
+    tags:
+      - "1.0.1"
+  schedule:
+    - cron: "30 00 * * *"
+
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE
+      # so the job can access it
+      - name: "Checkout"
+        uses: actions/checkout@v3
+
+      # Ensure all the required tools are installed prior to any make target
+      - name: "setup"
+        run: cd module4_task1 && ./setup.sh
+
+      # Spin up a docker container and execute makefile targets
+      - name: image Docker
+        working-directory: module4_task1
+        run: |
+            make build-docker
+            docker run --rm -v $(pwd):/app awesome:build make clean
+            docker run --rm -v $(pwd):/app awesome:build make lint
+            docker run --rm -v $(pwd):/app awesome:build make build
+            docker run --rm -v $(pwd):/app awesome:build make unit-tests
+            docker run --rm -v $(pwd):/app awesome:build make integration-tests
+            ls -la
+            docker images
+            pwd
